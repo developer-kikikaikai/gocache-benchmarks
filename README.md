@@ -1,5 +1,5 @@
-- It seems "github.com/akyoto/cache" is more simple and faster than others.
 - github.com/patrickmn/go-cache is one of the simplest tool, but large string data may be changed as []uint8. It's sometimes unuseful.
+- github.com/akyoto/cache is more simple and faster than others.
 - If you'd like to configure some parameters, Serialize logic, etc, it's better to use github.com/bluele/gcache.
 - github.com/dgraph-io/ristretto is more customizable package I guess. 
 
