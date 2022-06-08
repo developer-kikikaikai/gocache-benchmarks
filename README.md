@@ -1,13 +1,10 @@
+- It seems "github.com/akyoto/cache" is more simple and faster than others.
+- github.com/patrickmn/go-cache is one of the simplest tool, but large string data may be changed as []uint8. It's sometimes unuseful.
+- If you'd like to configure some parameters, Serialize logic, etc, it's better to use github.com/bluele/gcache.
+- github.com/dgraph-io/ristretto is more customizable package I guess. 
+
+
 ```
-Enumerating objects: 19, done.
-Counting objects: 100% (19/19), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (18/18), done.
-Writing objects: 100% (19/19), 4.37 KiB | 2.18 MiB/s, done.
-Total 19 (delta 3), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (3/3), done.
-To github.com:developer-kikikaikai/gocache-benchmarks.git
- * [new branch]      main -> main
 d0303tujihi1noMacBook-Pro:gocache-benchmarks tsuji$ make bench
 go1.18 test ./... -bench=. -benchmem
 goos: darwin
